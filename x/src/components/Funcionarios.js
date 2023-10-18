@@ -67,7 +67,6 @@ function Funcionarios() {
   return (
     <div>
       <AdicionarFuncionario onAdd={handleAdd} />
-      <button onClick={() => window.location.href = '/controlePonto.html'}>Ir para Controle de Ponto</button>
       <ListaFuncionarios funcionarios={funcionarios} onEdit={handleEdit} onDelete={handleDelete} />
       <EditFuncionarioModal show={isModalOpen} onClose={() => setIsModalOpen(false)} funcionario={editingFuncionario} onSave={handleSave} />
     </div>
